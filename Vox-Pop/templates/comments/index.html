@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoxPop - открытый микрофон</title>
+</head>
+
+<body>
+    <a href="/comments/new">Add new comment</a>
+    <ul>
+        <fieldset>
+            <legend>All comments</legend>
+            {% for comment in comments %}
+            <li>{{comment}}</li>
+            {% endfor %}
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new comment</title>
+</head>
+
+<body>
+    <form action="/comments/new" method="post">
+        <fieldset>
+            <legend>Write your comment</legend>
+            <label>Your comment</label><br>
+            <input type="text" required name="comment" /><br>
+            <label>Category </label>
+            <input type="radio" name="positive" /><br>
+            <input type="radio" name="negative" /><br>
+            <input type="submit" value="submit" />
+        </fieldset>
+    </form>
+</body>
+
+</html>
