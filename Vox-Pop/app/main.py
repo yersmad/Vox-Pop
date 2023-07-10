@@ -28,6 +28,6 @@ def get_new_comment(request: Request):
 
 
 @app.post("/comments/new")
-def post_new_comment(comment: str=Form(), category: bool=Form()):
+def post_new_comment(comment: str = Form(), category: bool = Form()):
     repository.append({"comment": comment, "category": category})
     return RedirectResponse("/comments", status_code=303)
